@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulroqib | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menuicon" onclick="togglesidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>Abdulroqib</h1>
+      <div class="sidebar">
+        <div id="cancelIcon" onclick="togglesidebar()">
+          <span id="top-bar"></span>
+          <span id="middle-bar"></span>
+          <span id="bottom-bar"></span>
+        </div>
+        <nav>
+          <a onclick="hideNav()" href="#about">About</a>
+          <a onclick="hideNav()" href="#skills">Skills</a>
+          <a onclick="hideNav()" href="#projects">Projects</a>
+          <a onclick="hideNav()" href="#contact">Contact</a>
+        </nav>
+      </div>
+      <nav id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Hi, I´m Abdulroqib</h2>
+        <p>
+          Beginner Front-End Developer| Creator of
+          <a href="https://scyflix.github.io/Scybud-Labs/">Scybud</a>
+        </p>
+        <a id="projectbtn" href="#projects">View my projects</a>
+      </section>
+      <section id="about" class="cards">
+        <h2>About Me</h2>
+        <p>
+          I am a beginner Front-End Developer currently learning HTML, CSS and
+          JavaScript. I create clean and responsive websites and plan to exploew
+          robotics engineering in the future. I build projects to learn and
+          grow.
+        </p>
+      </section>
+      <section id="skills" class="cards">
+        <h2>My skills</h2>
+        <div id="skills-list">
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JavaScript(Basic)</div>
+          <div>Responsive Design</div>
+          <div>Words Document(Basic)</div>
+        </div>
+      </section>
+      <section id="projects" class="cards">
+        <h2>My Projects</h2>
+        <div id="projects-container">
+          <div class="project">
+            <a href="https://trytasty.de/">TryTasty</a>
+            <p>Recipe website for easy, fun and tasty snack recipes.</p>
+          </div>
+          <div class="project">
+            <a href="https://scyflix.github.io/Playbud/">Playbud</a>
+            <p>A game portal for simple icebreaker and bordom-killer games.</p>
+          </div>
+          <div class="project">
+            <a href="https://scyflix.github.io/ResBuild/">ResBuild</a>
+            <p>
+              A resume builder website that helps to create simple resume(first
+              project i made with JavaScript).
+            </p>
+          </div>
+          <div class="project">
+            <a href="https://sites.google.com/view/thias-vogue/home"
+              >Thia`s Vogue</a
+            >
+            <p>
+              A fashionsite showcasing a Nigerian based fashion designer`s work
+              and styles(created with Google Sites).
+            </p>
+          </div>
+          <div class="project">
+            <a href="https://scyflix.github.io/Scybud-Labs/calculator.html"
+              >A calculator</a
+            >
+            <p>A web calculator built as a learning projects.</p>
+          </div>
+          <div class="project">
+            <a href="https://scyflix.github.io/Abdulroqib-Oladipo/"
+              >My Resume</a
+            >
+            <p>
+              My resume created as a website for an internship position to show
+              my skils at the time.
+            </p>
+          </div>
+          <div class="project">
+            <a href="https://scyflix.github.io/Abdulroqib-Oladipo/"
+              >Salvation Nsx</a
+            >
+            <p>An artist website showcasing his work.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="cards">
+        <h2>Contact</h2>
+        <p>Lets collaborate and build something fun together</p>
+        <p>
+          <span> Email: </span>
+          <a href="mailto:abdulroqeeboladipo@gmail.com"
+            >abdulroqeeboladipo@gmail.com</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/scyflix">Github</a> |
+          <a href="https://x.com/abdulroqib123">Twitter/X</a> |
+          <a href="https://www.linkedin.com/in/abdulroqib-oladipo-a85197253/"
+            >Linkedin</a
+          >
+          |
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Scybud | Built by Abdulroqib Oladipo</p>
+    </footer>
+    <script>
+      const sidebar = document.querySelector(".sidebar");
+      function togglesidebar() {
+        sidebar.classList.toggle("show");
+      }
+      function hideNav() {
+        sidebar.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
